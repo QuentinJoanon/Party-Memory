@@ -18,7 +18,7 @@ if (isset($_FILES['image'])) {
   }
   
   if (empty($errors) == true) {
-    move_uploaded_file($file_tmp, "images/" . $file_name);
+    move_uploaded_file($file_tmp, "../images/" . $file_name);
     echo "L'image a été téléchargée avec succès.";
   } else {
     print_r($errors);
