@@ -1,0 +1,11 @@
+<%- include("partials/head.ejs") %>
+
+<main>
+    <% for(let i = 0; i < fileList.length; i++) { %>
+         <div class="picture-case">
+            <img class="picture-case__picture" src="uploads/photo-1676324053825.jpg" alt="<%= fileList[i] %>">
+        </div>
+    <% } %>
+</main>
+
+<%- include("partials/footer.ejs") %>
