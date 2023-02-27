@@ -1,4 +1,4 @@
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5050;
 const express = require('express');
 const app = express();
 
@@ -14,7 +14,7 @@ app.use(express.static("public"));
 app.use(router);
 
 
-app.post('/upload', upload.single('photo'), uploadRoute);
+app.post('/upload', upload.array('photo'), uploadRoute);
 
 
 app.listen(PORT, ()=>{

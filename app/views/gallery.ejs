@@ -1,9 +1,9 @@
 <%- include("partials/head.ejs") %>
 
-<main>
+<main class="gallery">
     <% for(let i = 0; i < fileList.length; i++) { %>
-         <div class="picture-case">
-            <img class="picture-case__picture" src="uploads/photo-1676324053825.jpg" alt="<%= fileList[i] %>">
+         <div class="gallery__picture-case">
+            <img class="picture-case__picture" src="uploads/<%= fileList[i] %>" alt="<%= fileList[i] %>">
         </div>
     <% } %>
 </main>

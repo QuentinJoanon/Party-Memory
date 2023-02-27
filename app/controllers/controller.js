@@ -15,13 +15,13 @@ const controller = {
   galleryPage(req, res){
     res.render("gallery", {fileList});
   },
-    /**
+  /**
    * Affichage de la page upload
    * Pas de paramètres
    */
-    uploadPage(req, res){
-      res.render("upload");
-    },
+  uploadPage(req, res){
+    res.render("upload");
+  },
 };
 
 module.exports = controller;
