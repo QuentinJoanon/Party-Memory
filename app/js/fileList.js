@@ -3,7 +3,7 @@ const path = require('path');
 
 let fileList = [];
 
-fs.readdir('./public/uploads', (err, files) => {
+fs.readdir('/public/uploads', (err, files) => {
   if (err) {
     console.error(err);
   } else {
